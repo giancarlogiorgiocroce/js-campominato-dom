@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root{
+    --grandezza: 650px;
+}
+
+/*
+    GENERALI
+*/
+header,
+footer{
+    background-color: bisque;
+    height: 7.2vh;
+}
+/*
+    /GENERALI
+*/
+
+
+/*
+    HEADER
+*/
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+form{
+    margin-right: 30px;
+}
+
+label{
+    margin-right: 5px;
+}
+
+button,
+select{
+    background-color: orange;
+    padding: 5px;
+    border: 1px solid bisque;
+    border-radius: 10px;
+}
+
+#btn{
+    padding: 6px;
+}
+#btn:hover{
+    background-color: teal;
+}
+#btn:active{
+    color: bisque;
+}
+/*
+    /HEADER
+*/
+
+
+/*
+    MAIN
+*/
+main{
+    background-color: orange;
+    min-height: var(--grandezza);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    max-width: var(--grandezza);
+    flex-wrap: wrap;
+}
+
+.window{
+    width: 300px;
+    height: 450px;
+    margin-bottom: 100px;
+    background-color: teal;
+    color: bisque;
+}
+
+.box{
+    border: 1px solid bisque;
+}
+.box100{
+    width: calc(var(--grandezza) / 10);
+    height: calc(var(--grandezza) / 10);
+}
+.box81{
+    width: calc(var(--grandezza) / 9);
+    height: calc(var(--grandezza) / 9);
+}
+.box49{
+    width: calc(var(--grandezza) / 7);
+    height: calc(var(--grandezza) / 7);
+}
+.active{
+    background-color: teal;
+    color: bisque;
+}
+.bomb{
+    background-color: red;
+}
+/*
+    /MAIN
+*/
+
+/*
+    FOOTER
+*/
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer p{
+    margin: 12px;
+    font-size: 12px;
+    font-style: italic;
+}
+footer p::after{
+    content: "\2661";
+}
+/*
+    /FOOTER
+*/

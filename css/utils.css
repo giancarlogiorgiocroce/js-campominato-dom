@@ -7,3 +7,31 @@
 .invisible{
     display: none;
 }
+
+.m10{
+    margin: 10px;
+}
+
+/*Quadrati e loro classi specifiche*/
+.box{
+    border: 1px solid bisque;
+}
+.box100{
+    width: calc(var(--grandezza) / 10);
+    height: calc(var(--grandezza) / 10);
+}
+.box81{
+    width: calc(var(--grandezza) / 9);
+    height: calc(var(--grandezza) / 9);
+}
+.box49{
+    width: calc(var(--grandezza) / 7);
+    height: calc(var(--grandezza) / 7);
+}
+.active{
+    background-color: teal;
+    color: bisque;
+}
+.bomb.active{
+    background-color: red;
+}
